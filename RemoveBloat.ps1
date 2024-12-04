@@ -1712,4 +1712,5 @@ Start-Process -FilePath "C:\ProgramData\Debloat\odt.exe" -ArgumentList "/configu
 }
 
 write-output "Completed"
+Restart-Computer -Force
 Stop-Transcript
