@@ -90,7 +90,7 @@ $WhitelistedApps = @(
     'MIDIBerry',
     'Slack',
     'Microsoft.SecHealthUI',
-    'WavesAudio.MaxxAudioProforDell2019',<#
+    'WavesAudio.MaxxAudioProforDell2019',
     'Dell Optimizer Core',
     'Dell SupportAssist Remediation',
     'Dell SupportAssist OS Recovery Plugin for Dell Update',
@@ -99,7 +99,7 @@ $WhitelistedApps = @(
     'Dell Display Manager 2.1',
     'Dell Display Manager 2.2',
     'Dell Peripheral Manager',
-    'MSTeams',#>
+    'MSTeams',
     'Microsoft.Paint',
     'Microsoft.OutlookForWindows',
     'Microsoft.WindowsTerminal',
