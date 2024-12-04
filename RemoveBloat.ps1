@@ -1248,7 +1248,7 @@ if ($manufacturer -like "*Dell*") {
         If ($sa.QuietUninstallString) {
             try {
                 cmd.exe /c $sa.QuietUninstallString
-            }v catch {
+            } catch {
                 Write-Warning "Failed to uninstall Dell Support Assist Remediation"
             }
         }
