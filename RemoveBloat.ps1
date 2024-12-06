@@ -1506,6 +1506,7 @@ foreach ($user in $users) {
 #                                                                                                          #
 ############################################################################################################
 #McAfee
+<#
 write-output "Detecting McAfee"
 $mcafeeinstalled = "false"
 $InstalledSoftware = Get-ChildItem "HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall"
@@ -1526,6 +1527,7 @@ foreach ($obj32 in $InstalledSoftware32) {
 
 if ($mcafeeinstalled -eq "true") {
     write-output "McAfee detected"
+#>
     #Remove McAfee bloat
     ##McAfee
     ### Download McAfee Consumer Product Removal Tool ###
@@ -1614,7 +1616,7 @@ if ($mcafeeinstalled -eq "true") {
     get-appxprovisionedpackage -online | sort-object displayname | format-table displayname, packagename
     get-appxpackage -allusers | sort-object name | format-table name, packagefullname
     Get-AppxProvisionedPackage -Online | Where-Object DisplayName -eq "McAfeeWPSSparsePackage" | Remove-AppxProvisionedPackage -Online -AllUsers
-}
+# }
 
 ##Look for anything else
 ##Make sure Intune hasn't installed anything so we don't remove installed apps
